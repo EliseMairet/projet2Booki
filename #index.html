@@ -18,53 +18,52 @@
 <body>
     <div class="main-container">
         <header>
-            <a 
-                href="projet2HTML.html">
-                <img src="image/logo_Booki.png" alt="logo Booki">
-            </a>
-            <nav>
+            <section>
                 <a 
-                    href="hebergeemnt.html">
-                    hébergement
-            </a>
-                <a
-                href="activité.html">
-                activité 
-                </a> 
-            </nav>
+                    href="projet2HTML.html">
+                    <img src="image/logo_Booki.png" alt="logo Booki">
+                </a>
+                <nav>
+                        <div class="hébergement"></div>
+                        <a href="#"></a>
+                        hébergement
+                        <div class="activité"></div>
+                        <a href="#"></a>
+                        activité 
+                </nav>
+            </section>
         </header>
 
 
         <main>
             <div>
-                <p><strong>trouvez votre hebergement pour des vacances de rêve</strong></p>
-                <p>en plein centre ville ou en pleine nature</p>
-            </div>
-            <a>
-                <img src="image/barre_recherche.png" alt="barre de recherche Marseille">
-            </a>
-            <div>
-
-
-                   
-                <strong>
-                        <p>
+                <section class="info-group">
+                    <div class="texte">
+                        <div>
+                            <p><strong>trouvez votre hebergement pour des vacances de rêve</strong></p>
+                            <p>en plein centre ville ou en pleine nature</p>
+                        </div>
+                        <div class="barre-de-recherche">
+                            <i class="fa-solid fa-location-dot fa-1x"></i>
+                            <label for="site-search"></label>
+                            <input type="search" id="site-search" name="q" />
+                            <button>Rechercher</button>
+                        </div>
+                    </div>
+                    <strong>
                             Filtres 
                             <div class="filtres">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                                <a> <img src="image/Vector_2.png" alt="Familial"> Familial </a>
-                                <a> <img src="image/Vector_3.png" alt="Romantique"> Romantique </a>
-                                <a> <img src="image/Vector_4.png" alt="Nos pépites"> Nos pépites</a>
+                            <div><i class="fa-solid fa-money-bill-wave"></i> Economique</div>
+                            <div><i class="fa-solid fa-person"></i> Familial</div>
+                            <div><i class="fa-solid fa-heart"></i> Romantique</div>
+                            <div><i class="fa-solid fa-fire"></i> Nos Pépites</div>
                             </div>
-                            </p>
                     </strong>
 
-
-
-
-
-                <p><a> <img src="image/point_info.png" alt="point info"></a></p>
+                    <a><i class="fa-solid fa-info fa-border"></i>Plus de 500 logments sont disponibles dans cette ville</a>
+                </section>
             </div>
+
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">

@@ -3,8 +3,62 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.barre-de-recherche {
+    width: (377px);
+    height: (49px);
+    border-radius: 15px;
+    border: 1px;
+    gap: 24px;
+    display: flex;
+}
+
+
+.barre-de-recherche i{
+    color:black;
+    width: 50px;
+    height: 49px;
+    Border: 1px;
+    border-radius: 15px 0px 0px 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.barre-de-recherche button {
+    width: (132px);
+    height: Fixed (49px);
+    padding: 15px, 16px, 15px, 16px;
+    border-radius: 0px, 15px, 15px, 0px;
+    border: 1px;
+    gap: 10px;
+    background-color: #0065FC;
+
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFF
+}
+
+.filtres div {
+    border-color: #d9d9d9;
+    border: solid 2px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+}
+
+
 .hébergement {
-    text-align: right;
+    text-align: center;
 }
 
 
