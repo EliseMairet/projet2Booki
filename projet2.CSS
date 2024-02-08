@@ -1,66 +1,11 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    width: Fixed (1,440px);
+    height: (1,831.02px);
+    gap: 30px;
+
 }
-
-.barre-de-recherche {
-    width: (377px);
-    height: (49px);
-    border-radius: 15px;
-    border: 1px;
-    gap: 24px;
-    display: flex;
-}
-
-
-.barre-de-recherche i{
-    color:black;
-    width: 50px;
-    height: 49px;
-    Border: 1px;
-    border-radius: 15px 0px 0px 15px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #F2F2F2;
-}
-
-.barre-de-recherche button {
-    width: (132px);
-    height: Fixed (49px);
-    padding: 15px, 16px, 15px, 16px;
-    border-radius: 0px, 15px, 15px, 0px;
-    border: 1px;
-    gap: 10px;
-    background-color: #0065FC;
-
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFF
-}
-
-.filtres div {
-    border-color: #d9d9d9;
-    border: solid 2px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    cursor: pointer;
-    text-align: center;
-}
-
-
-.hébergement {
-    text-align: center;
-}
-
 
 :root {
     --main-color: #0065FC;
@@ -68,13 +13,20 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
+    width: Fill (1,440px);
+    height: (1,722.02px);
+    padding: 0px 50px 0px 50px;
+    gap: 35px;
+
+}
+
+.header {
+    position : absolute;
+    width: 1440px;
+    height: 79px;
 }
 
 .main-container {
@@ -94,19 +46,158 @@ a {
     font-size: 22px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+
+/*navigation (hébergement/ activité)*/
+
+.nav {
+    position: auto;
+    width: 294px;
+    height: 35px;
+    padding: 0px 25px 0px 25px;
+    gap: 68px;
 }
+
+/*navigation (hébergement)*/
+
+.hébergement1 {
+    text-align: center;
+    width: 112px;
+    height: 19px;
+    top: 16px;
+
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+/*navigation (activité)*/
+
+
+
+/*barre de recherche*/
+
+.barre-de-recherche {
+    width: (377px);
+    height: (49px);
+    border-radius: 15px;
+    border: 1px;
+    gap: 24px;
+    display: flex;
+}
+
+
+.barre-de-recherche i {
+    color:black;
+    width: 50px;
+    height: 49px;
+    Border: 1px;
+    border-radius: 15px 0px 0px 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.barre-de-recherche button {
+    width: (132px);
+    height: (49px);
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px;
+    gap: 10px;
+    background-color: #0065FC;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFF
+}
+
+/*filtres*/
+
+.filtres {
+    border-color: #d9d9d9;
+    border: solid 2px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+
+    width: (173px);
+    height: Fixed (50px);
+    padding: 4px 19px 4px 19px;
+    border-radius: 25px;
+    border: 2px;
+    gap: 10px;
+
+    width: (758px);
+    height: Fixed (50px);
+    gap: 15px;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.fa-solid {
+    color: var(--main-color);
+    
+ }
+
+
+/*éléments globale cartes*/
+
 
 .card img {
     object-fit: cover;
+    width: 250.33px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px;
 }
 
 .card-title {
     font-size: 16px;
+    width: Fill (250.33px);
+    height: (64.25px);
+    padding: 0px 15px 0px 15px;
+    gap: 8px;
+
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card-subtitle {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left; 
 }
 
 .euro {
@@ -121,6 +212,11 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    width: Fill (871px);
+    height: Fill (614px);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -133,22 +229,72 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    width: Fill (871px);
+    height: Fill (614px);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
 }
+
+.card { 
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    width: Fixed (429px);
+    height: Fill (614px);
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
+    background-color: #F2F2F2;
+
+}
+
+.card1 {
+    width: 369px;
+    height: 146px;
+    top: 622px;
+    left: 326px;
+    border-radius: 20px;
+    background-color: white;
+
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    width: 226px;
+    height: 19px;
+
 }
 
-.populaires-cards .card {
+.populaires-cards .card1 {
     display: flex;
     margin-top: 33px;
+
+    width: 369px;
+    height: 146px;
+    top: 622px;
+    left: 326px;
+    border-radius: 20px;
+
+    background-color: white;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .populaires-cards img {
@@ -156,6 +302,11 @@ a {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    width: 123px;
+    height: 146px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px 0px 5px 5px;
 }
 
 .populaires-cards .card-content {
@@ -170,10 +321,35 @@ a {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+
+    width: 226px;
+    height: 19px;
+
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    width: 226px;
+    height: 19px;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .populaires-cards .card-rating {
