@@ -14,7 +14,17 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;  
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    Width: 61.09px;
+    Height: 19px;
+   
 }
 
 body {
@@ -58,6 +68,10 @@ a {
     color: var(--main-color);
 }
 
+.card-rating {
+    padding-left: 15px;
+}
+
 /*texte*/
 
 .texte h2 {
@@ -78,6 +92,7 @@ a {
 
 .menu li:hover {
     border-top: solid 2px #0065FC;
+    color: #0065FC;
 }
 
 /*navigation (hébergement)*/
@@ -101,7 +116,7 @@ a {
     display: flex;
     border-radius: 15px;
     border: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .barre-de-recherche i {
@@ -148,11 +163,15 @@ a {
 
 /*filtres*/
 
-.filtres {
+.filtre {
     display: flex;
     margin-bottom: 30px;
     margin: 0px;
     padding: 0px;
+}
+
+.filtres {
+    align-self: center;
 }
 
 .fa-filtre {
@@ -164,7 +183,7 @@ a {
     border-color: #D9D9D9;
 }
 
-.filtres span {
+.filtre span {
     color: black;
     font-size: 17px;
     font-weight: 700;
@@ -174,6 +193,10 @@ a {
 
 .filtres .fa-solid {  
     color:#0065FC;
+}
+
+.fa-filtre:hover {
+    background-color: #DEEBFF;
 }
 
 /*info*/
@@ -270,9 +293,6 @@ a {
 /**** Hebergements And Populaires ****/
 .hebergements-and-populaires {
     display: flex;
-    direction: row;
-    justify-content: space-between;
-
     border-radius: 15px;
     gap: 30px;
 }
@@ -292,6 +312,7 @@ a {
     padding: 30px;
     border-radius: 15px;
     gap: 30px;
+    width: 65%;
 }
 
 .hotel {
@@ -344,7 +365,6 @@ a {
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: left;
 
     width: 226px;
     height: 19px;
@@ -383,6 +403,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.card-txt {
+    margin-bottom: 5px;
 }
 
 .populaires-cards .card-title {
@@ -425,17 +450,14 @@ a {
     gap: 30px;
 }
 
-.activité-title {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: justify;
-}
+.activité_card {
+    display: flex;
+    direction: row;
+    gap: 30px;
 
-.card8 {
     border-radius: 20px 20px 0px 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 30px;
 }
 
 .card8 img {
@@ -452,23 +474,22 @@ a {
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: left;    
 }
 
 /*footer*/
 
 footer {
-    left: 1096px;
     padding: 0px 50px 0px 50px;
     gap: 68px;
-
+    
     display: flex;
     background-color: #f2f2f2;
+    
 }
 
 footer ul {
-    width: 446.67px;
     height: 163px;
+    width: 350px;
     gap: 15px;
 }
 
