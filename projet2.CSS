@@ -75,7 +75,13 @@ a {
 .menu {
     display: flex;
     gap: 68px;
-    border-top: solid 2px #FFFF;
+    width: 100%;
+    margin: 0;
+}
+
+.menu li {
+    padding: 16px 20px;
+    border-top: solid 2px #F2F2F2;
 }
 
 .menu li:hover {
@@ -91,7 +97,7 @@ a {
     display: flex;
     border-radius: 15px;
     border: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     row-gap: 30px;
 }
 
@@ -142,30 +148,36 @@ a {
 
 .filtre {
     display: flex;
-    margin-bottom: 30px;
-    margin: 0px;
-    padding: 0px;
-    row-gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 19px;
+    
 }
 
-.filtres {
-    align-self: center;
+.filtres span {
+    flex-wrap: wrap;
 }
 
 .fa-filtre {
-    padding: 4px 19px 4px 19px;
-    border-radius: 25px;
-    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 50px;
+    height: 50px;
+    width: 173px;
+}
+
+.filtre i {
     margin: 15px;
-    border-color: #D9D9D9;
 }
 
 .filtre span {
     color: black;
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;  
-    letter-spacing: 0em;
 }
 
 .filtres .fa-solid {  
@@ -254,11 +266,7 @@ a {
 
 /**** Hebergements ****/
 .hebergements {
-    width: 65%;
-}
-
-.hebergements section {
-    width: 100%;
+    max-width: 871px;
 }
 
 .hotel {
@@ -288,7 +296,8 @@ a {
 }
 
 .card1 img {
-    min-width: 16px;
+    width: 100%;
+    height: 126px;
 }
 
 .card1 { 
@@ -307,7 +316,7 @@ a {
 
 /**** Populaires ****/
 .populaires {
-    width: 32%;
+    width: 429px;
     padding: 30px;
     border-radius: 15px;
     gap: 30px;
@@ -357,9 +366,6 @@ a {
     box-sizing: border-box;
     border-radius: 20px;
 }
-.card-title {
-    overflow: auto;
-}
 
 .card-txt {
     margin-bottom: 5px;
@@ -368,9 +374,8 @@ a {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-
-    width: 226px;
-    height: 19px;
+    max-width: 163px;
+    max-height: 38px;
 
     font-size: 16px;
     font-weight: 700;
@@ -400,55 +405,45 @@ a {
 
 .activité {
     padding: 30px;
-    gap: 30px;
 }
 
 .activité_card {
     display: flex;
-    direction: row;
     gap: 30px;
-
-    border-radius: 20px 20px 0px 0px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.activité_card article {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card8 img {
-    width: 297.5px;
-    height: 380px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-}
-
-.card8 h3 {
-    border-radius: 0px 0px 20px 20px;
-    gap: 10px;
-
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
 }
 
 /*footer*/
 
 footer {
-    padding: 0px 50px 0px 50px;
-    gap: 68px;
-    
+    padding: 0px 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #f2f2f2;
-    
 }
 
 footer ul {
-    height: 163px;
-    width: 350px;
     gap: 15px;
+    padding: 0;
 }
 
-
 footer li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 
@@ -463,6 +458,10 @@ footer li {
 
     .hebergements {
         width: 100%;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
     }
 
     .populaires {
@@ -488,12 +487,12 @@ footer li {
         font-size: 13px;
     }
 
-    .activité_card {
-        width: 30%
-    }
-
     .hotel img {
         min-width: 16px;
+    }
+
+    .footer {
+        max-width: 924px;
     }
 }
 
