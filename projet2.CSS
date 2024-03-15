@@ -123,7 +123,18 @@ a {
     font-weight: 700;
     line-height: 21px;
     text-align: center;
-    border: 1px #F2F2F2;
+    border: none;
+
+
+
+
+
+
+
+
+
+
+    /*bordure*/
 }
 
 .barre-de-recherche input::placeholder {
@@ -174,13 +185,12 @@ a {
     border: 2px solid #D9D9D9;
     border-radius: 50px;
     height: 50px;
-    gap: 10px;
+    gap: 5px;
     padding: 0 10px;
 }
 
 .filtre span {
     color: black;
-    font-size: 19px;
     font-weight: 700;
     margin: 0px 15px 0 0;
 }
@@ -259,13 +269,15 @@ a {
 /**** Hebergements And Populaires ****/
 .hebergements-and-populaires {
     display: flex;
-    border-radius: 15px;
+    border-radius: 20px;
     gap: 30px;
+    padding: 27px;
+    box-sizing: border-box;
 }
 
 /**** Hebergements ****/
 .hebergements {
-    max-width: 871px;
+    width: 67%;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px 30px 0px 30px;
@@ -281,7 +293,13 @@ a {
 
 .hotel a {
     width: 32%;
+    display: flex;
     justify-content: space-between;
+    align-items: stretch;
+}
+
+.card {
+    height: 95%;
 }
 
 .card1 img {
@@ -296,7 +314,11 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     gap: 4px;
     font-size: 16px;
-    width: 100%;
+    height: 98%;
+}
+
+.card-rating {
+    margin-bottom: 12px;
 }
 
 .fa-star {
@@ -306,7 +328,7 @@ a {
 
 /**** Populaires ****/
 .populaires {
-    width: 429px;
+    width: 32%;
     padding: 30px;
     border-radius: 15px;
     gap: 30px;
@@ -325,12 +347,9 @@ a {
 
 .populaires-cards .card7 {
     display: flex;
+    
     border-radius: 20px 20px 20px 20px;
-    object-fit: cover;
-    margin-bottom: 30px;
-
-    width: 100%;
-    max-width: 429px;
+    margin-top: 33px;
 
     background-color: white;
     padding: 5px;
@@ -340,23 +359,20 @@ a {
 .populaires-cards img {
     width: 33%;
     height: 136px;
-
-
-
-
-
-
-
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
     object-fit: cover;
 
     border-radius: 20px 0px 0px 20px;
     border: 5px 0px 5px 5px;
 }
 
+
 .populaires-cards .card-content {
-    width: 100%;
+    width: 67%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -369,6 +385,8 @@ a {
 }
 
 .populaires-cards .card-subtitle {
+    margin: 0;
+
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -379,6 +397,7 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 /*activité à Marseille*/
@@ -397,7 +416,7 @@ a {
 }
 
 .activité_card article {
-    max-width: 297px;
+    width: 100%;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -444,10 +463,11 @@ footer li {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        padding: 0;
     }
 
     .hebergements {
-        width: 96.40%;
+        width: 100%;
     }  
 
     .filtres {
@@ -455,12 +475,17 @@ footer li {
     }
 
     .fa-filtre {
-        object-fit: contain;
+        width: 18%;
+        gap: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        display: flex;
     }
 
     .populaires {
-        width: 96.40%;
+        width: 100%;
         margin-top: 50px;
+        box-sizing: border-box;
     }
 
     .populaires-cards {
@@ -483,6 +508,10 @@ footer li {
 
     .hotel img {
         min-width: 16px;
+    }
+
+    .activité {
+        padding: 30px 0px;
     }
 
     .footer {
@@ -580,6 +609,7 @@ footer li {
     .filtre {
         width: 97%;
         margin: 0px 15px;
+        gap: 5px;
     }
 
     .filtres {
@@ -587,16 +617,16 @@ footer li {
     }
 
     .filtres span {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .filtres i {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .fa-filtre {
         width: 45%;
-        width: calc(45% - 15px);
+        width: calc(43% - 15px);
     }
 
     .fa-filtre span {
@@ -624,78 +654,92 @@ footer li {
         padding: 30px 30px;
         margin: 0px 50px;
         width: 100%;
-    }
-
-    .populaires-title {
-        padding: 0px 50px;
+        border-radius: 0;
     }
 
     .populaires-cards {
-        display: grid;
+        display: flex;
         flex-direction: column;
-        padding: 0px 50px;
         width: 100%;
     }
 
-   
-
     .populaires-cards a {
-        display: grid;
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
     }
 
     /*hebergements*/
 
     .fa-star {
-    width: 81px;
-    display: inline;
+        width: 81px;
+        display: inline;
     }
 
     .hebergements {
         background-color: white;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+
+    .card {
         width: 100%;
     }
 
-    .hebergements h2 {
-        padding: 0px 30px;
-    }
-
-    .hotel {
-        display: grid;
-        padding: 0px 50px;
-        width: 100%;
+    .card1 img {
+        display: flex;
+        object-fit: cover;
     }
 
     .hotel a {
+        display: flex;
         width: 100%;
-    }
-
-    .hebergements h4 {
-        padding: 0px 50px;
     }
 
     /*activité*/
 
     .activité {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        padding: 0px 50px;
-    }
-
-    .card8 a {
-        max-width: 100%;
+        box-sizing: border-box;
+        padding : 0px 20px;
     }
 
     .activité_card {
-        display: grid;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
+    .activité_card img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .activité_card article {
+        flex-flow: row wrap;
+    }
+
+    .card8 {
+        height: 200px;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 5%;
+        object-fit: cover;
+    }
+
+    .card8 img {
+        width: 100%;
+        max-height: 70%;
+        object-fit: cover;
+    }
+    
     /*footer*/
 
     footer {
-        display: grid;
-        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     footer div {
