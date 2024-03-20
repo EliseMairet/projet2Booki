@@ -1,4 +1,4 @@
-/**** General ****/
+/* General */
 * {
     font-family: 'Raleway', sans-serif;  
 }
@@ -92,9 +92,6 @@ a {
 .barre-de-recherche {
     display: flex;
     border-radius: 15px;
-    border: 1px;  
-    border-radius: 15px;
-    border: 1px;
     margin-bottom: 30px;
     row-gap: 30px;
 }
@@ -123,18 +120,8 @@ a {
     font-weight: 700;
     line-height: 21px;
     text-align: center;
-    border: none;
-
-
-
-
-
-
-
-
-
-
-    /*bordure*/
+    border: solid 2px;
+    border-color: #F2F2F2;
 }
 
 .barre-de-recherche input::placeholder {
@@ -212,7 +199,7 @@ a {
 
 .info a {
     display: flex;
-    direction: row;
+    flex-direction: row;
     text-align: left;
     align-items: center;
     column-gap: 12px;
@@ -293,12 +280,10 @@ a {
 
 .hotel a {
     width: 32%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
 }
 
 .card {
+    display: flex;
     height: 95%;
 }
 
@@ -317,8 +302,9 @@ a {
     height: 98%;
 }
 
-.card-rating {
-    margin-bottom: 12px;
+.hotel .card-rating {
+    margin-bottom: 10px;
+    
 }
 
 .fa-star {
@@ -366,7 +352,7 @@ a {
     object-fit: cover;
 
     border-radius: 20px 0px 0px 20px;
-    border: 5px 0px 5px 5px;
+    border-width: 5px 0px 5px 5px;
 }
 
 
@@ -666,7 +652,7 @@ footer li {
     .populaires-cards a {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
     }
 
     /*hebergements*/
@@ -682,17 +668,16 @@ footer li {
         object-fit: cover;
     }
 
-    .card {
+    .card1 {
         width: 100%;
     }
 
     .card1 img {
         display: flex;
-        object-fit: cover;
     }
 
     .hotel a {
-        display: flex;
+        
         width: 100%;
     }
 
