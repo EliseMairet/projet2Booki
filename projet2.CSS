@@ -242,7 +242,6 @@ a {
 .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card-subtitle {
@@ -284,32 +283,33 @@ a {
 }
 
 .hotel a {
+    display: flex;
     width: 32%;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.hotel img {
+    width: 100%;
+    height: 120px;
+
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border-width: 5px;
 }
 
 .card {
     display: flex;
-    height: 95%;
-}
+    flex-direction: column;
 
-.card1 img {
-    width: 100%;
-    height: 126px;
-}
-
-.card1 {
-    padding-bottom: 5px;
+    width: 90%;
+    padding: 5px;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     gap: 4px;
     font-size: 16px;
-    height: 98%;
-}
-
-.hotel .card-rating {
-    margin-bottom: 10px;
-    
 }
 
 .fa-star {
@@ -377,7 +377,6 @@ a {
 
 .populaires-cards .card-subtitle {
     margin: 0;
-
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -452,14 +451,7 @@ footer li {
 /**** Media queries ****/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .hebergements {
-        width: 100%;
-    }  
+/*info*/
 
     .filtres {
         width: 100%;
@@ -472,6 +464,29 @@ footer li {
         font-weight: 700;
         display: flex;
     }
+
+     /*hébergeents et populaires*/
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /*hebergement*/
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .card {
+        width:100%;
+    }
+
+    .hotel img {
+        min-width: 16px;
+    }
+
+    /*populaire*/
 
     .populaires {
         width: 100%;
@@ -486,7 +501,7 @@ footer li {
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
     .populaires-cards .card-title {
@@ -497,13 +512,13 @@ footer li {
         font-size: 13px;
     }
 
-    .hotel img {
-        min-width: 16px;
-    }
+    /*activité*/
 
     .activité {
         padding: 30px 0px;
     }
+
+    /*pied de page*/
 
     .footer {
         max-width: 924px;
