@@ -23,20 +23,18 @@ Chaque carte d’hébergement ou d’activité devra être cliquable dans son in
 - Les icônes proviennent de la bibliothèque Font Awesome.
 - La police du site est Raleway. Nous pouvons passer par Google Font pour importer facilement cette police dans le code : https://fonts.google.com/specimen/Raleway.
 - Il est important d’utiliser les pixels et les pourcentages plutôt que les REM et les EM (precision, contrôle direct, plus de compatibilité, facilité de compréhension)
-- Il est important d’utiliser Flexbox plutôt que Grid car c’est la techno que l’équipe maîtrise le mieux.
-- Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less) ne doit être utilisé.
+- Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less)<ne doit être utilisé.
 - Il est important d’utiliser des balises sémantiques (type `main`, `header`, `nav`, etc.).
 - Utilisation de flexbox fortement recommandé plutôt que grid
 - Le code doit être valide aux validateurs W3C HTML et CSS.
 - La maquette doit être compatible avec les dernières versions de Google Chrome et de Mozilla Firefox. Il faudra tester le prototype sur ces deux navigateurs.
 
-# Couleurs utulisé
+# Couleurs utilisées
 
 - #0065FC; (bleu)
 - #F2F2F2; (gris)
 - #DEEBFF; (bleu clair)
 
-# image des versions
 
 
 
