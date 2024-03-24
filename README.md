@@ -1,6 +1,6 @@
 # Booki
 
-Travaillant actuellement en tant que développeur web, pour la start-up Booki. L’entreprise à souhaiter développer un site internet qui permettra aux clients de trouver des hébergements et des activités de la ville de leurs choix. Mon travail a consisté à la mise en place du code HTML et CSS du site. 
+Travaillant actuellement en tant qu'altrnant développeur web, pour la start-up Booki. L’entreprise à souhaiter développer un site internet qui permettra aux clients de trouver des hébergements et des activités de la ville de leurs choix. Mon travail a consisté à la mise en place du code HTML et CSS du site. 
 
 # Compétences 
 
