@@ -546,6 +546,9 @@ footer li {
 
     .populaires-cards a {
         width: 32%;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
     }
 
     .populaires-cards .card-title {
@@ -562,7 +565,7 @@ footer li {
     }
 
     .populaires-cards img{
-        min-width: 90px;
+        min-width: 89px;
         width: 30%;
     }
 
@@ -606,7 +609,7 @@ footer li {
     }
 
     h1 {
-        width: 50%;
+        width: 48%;
     }
 
     /*header*/
@@ -819,6 +822,7 @@ footer li {
 
     .activité_card article {
         flex-flow: row wrap;
+        height: 450px;
     }
 
     .card8 {
@@ -831,8 +835,12 @@ footer li {
 
     .card8 img {
         width: 100%;
-        max-height: 70%;
+        height: 390px;
         object-fit: cover;
+    }
+
+    .card8 .card-txt {
+        height: 50px;
     }
     
     /*footer*/
