@@ -609,7 +609,7 @@ footer li {
     }
 
     h1 {
-        width: 48%;
+        max-width: 335px;
     }
 
     /*header*/
@@ -628,7 +628,7 @@ footer li {
     /*menu*/
 
     .info {
-        width: 50%;
+        width: 335px;
     }
 
     .info-group {
@@ -732,127 +732,139 @@ footer li {
         min-width: 24px;
     }
 
-    /*hébergeents et populaires*/
+/*hébergeents et populaires*/
 
-    .hebergements-and-populaires {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        width: 100%;
-        gap: 10px;
-    }
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
 
-    /*populaires*/
+/*populaires*/
 
-    .populaires {
-        padding: 30px 20px;
-        margin: 0px 50px;
-        width: 100%;
-        border-radius: 0;
-    }
+.populaires {
+    padding: 30px 20px;
+    margin: 0px 50px;
+    width: 100%;
+    border-radius: 0;
+}
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-    .populaires-cards a {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+.populaires-cards a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-    .populaires-cards img{
-        min-width: 90px;
-        max-width: 111px;
-        width: 30%;
-        height: 150px;
-    }
+.populaires-cards img{
+    min-width: 90px;
+    max-width: 111px;
+    width: 50%;
+    height: 136px;
+}
 
-    /*hebergements*/
+.populaires-cards .card-title{
+    font-size: 16px;
+}
 
-    .fa-star {
-        width: 81px;
-        display: inline;
-    }
+/*hebergements*/
 
-    .hebergements {
-        background-color: white;
-        object-fit: cover;
-        padding: 30px 20px;
-    }
+.fa-star {
+    width: 81px;
+    display: inline;
+}
 
-    .card1 {
-        width: 100%;
-    }
+.hebergements {
+    background-color: white;
+    object-fit: cover;
+    padding: 30px 20px;
+}
 
-    .card1 img {
-        display: flex;
-    }
+.card1 {
+    width: 100%;
+}
 
-    .hotel a {
-        max-width: inherit;
-        width: 100%;
-    }
+.card1 img {
+    display: flex;
+}
 
-    .hotel img {
-        height: 230px;
-    }
+.hotel{
+    padding:15px 0;
+    row-gap: 15px;
+}
 
-    /*activité*/
+.hotel a {
+    max-width: inherit;
+    width: 100%;
+}
 
-    .activité {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding : 0px 20px;
-    }
+.hotel img {
+    height: 124px;
+}
 
-    .activité_card {
-        display: flex;
-        flex-direction: column;
-    }
+.hebergements h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
 
-    .activité_card img {
-        height: 140px;
-        width: 100%;
-        object-fit: cover;
-    }
+/*activité*/
 
-    .activité_card article {
-        flex-flow: row wrap;
-        height: 450px;
-    }
+.activité {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding : 0px 20px;
+}
 
-    .card8 {
-        height: 200px;
-        width: 85%;
-        margin: auto;
-        margin-bottom: 5%;
-        object-fit: cover;
-    }
+.activité .section-title {
+    margin-left: 5px;
+}
 
-    .card8 img {
-        width: 100%;
-        height: 390px;
-        object-fit: cover;
-    }
+.activité_card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
 
-    .card8 .card-txt {
-        height: 50px;
-    }
-    
-    /*footer*/
+.activité_card article {
+    flex-flow: row wrap;
+}
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
+.card8 {
+    height: 200px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5%;
+    object-fit: cover;
+}
 
-    footer div {
-        width: 100%;
-    }
-   
+.card8 img {
+    width: 100%;
+    height: 141px;
+    object-fit: cover;
+}
+
+.card8 .card-txt {
+    height: 50px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer div {
+    width: 100%;
+}
+
 }
